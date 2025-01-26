@@ -9,13 +9,13 @@ jobs:
       - name: List file
         run: |
           pwd
-          ls -l
+          ls -a
       - name: Checkout Repository
         uses: actions/checkout@v4
       - name: List file after checkout
         run: |
           pwd
-          ls -l
+          ls -a
       - name: Simple JS Action
         id: simple-js-action
         uses: actions/hello-world-javascript-action@v1.1
