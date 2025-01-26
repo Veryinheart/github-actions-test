@@ -10,6 +10,12 @@ jobs:
         run: |
           pwd
           ls -l
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: List file after checkout
+        run: |
+          pwd
+          ls -l
       - name: Simple JS Action
         id: simple-js-action
         uses: actions/hello-world-javascript-action@v1.1
